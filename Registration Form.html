@@ -14,7 +14,25 @@
         <label for="email">Enter Your Email: <input id="email" type="email" required/></label>
         <label for="new-password">Create A New Password <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required/></label>
     </fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
+    <fieldset>
+        <legend>Account type (required)</legend>
+        <label><input for="personal-account" type="radio" name="account-name" id="personal-account" checked/> Personal</label>
+        <label><input for="business-account" type="radio" name="account-name" id="personal-account"/> Business</label>
+    </fieldset>
+    <fieldset>
+        <label>Upload a profile picture: <input type="file" /></label>
+        <label>Input your age (years): <input type="number" min="13" max="120" /></label>
+        <label>How did you hear about us?
+        <select>
+            <option value="">(select one)</option>
+            <option value="1">freecodecamp news</option>
+            <option value="2">freecodecamp youtube channel</option>
+            <option value="3">freecodecamp forum</option>
+            <option value="4">other</option>
+        </select>
+        </label>
+    </fieldset>
+    <label for="terms-and-conditions"><input type="checkbox" required id="terms-and-conditions">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions<a></label>
     <input type="submit" value="Submit"/>
-</body></html>
+</body>
+</html>
